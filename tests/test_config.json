@@ -1,0 +1,25 @@
+{
+    "handlers": {
+        "test_handler": {
+            "level": "INFO",
+            "class": "logging.StreamHandler",
+            "formatter": "test_formatter",
+            "stream": "ext://sys.stdout"
+        }
+    },
+    "formatters": {
+        "test_formatter": {
+            "format": "TestFormatter: {asctime} {levelname:3.3} {name}: {message}",
+            "class": "logging_py3.colored_formatter.ColoredFormatter",
+            "style": "{"
+        }
+
+    },
+    "loggers": {
+        "root": {
+            "level": "INFO",
+            "handlers": ["test_handler"]
+        }
+    },
+    "show_warnings": false
+}

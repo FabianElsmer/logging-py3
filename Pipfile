@@ -7,6 +7,8 @@ verify_ssl = true
 click = "*"
 pip = "==18.0"
 coloredlogs = "==10.0"
+sentry_sdk = "*"
+logging-py3 = {path = ".",editable = true}
 
 [dev-packages]
 pytest = "*"

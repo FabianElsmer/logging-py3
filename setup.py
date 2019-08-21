@@ -30,7 +30,7 @@ setup(
     description="Logging Py3 is an easily configurable python3 module for advanced logging use cases",
     entry_points={
         'console_scripts': [
-            'logging_py3=logging_py3.cli:main',
+            'logging_py3=logging_py3.cli:cli',
         ],
     },
     install_requires=requirements,
